@@ -98,7 +98,7 @@ a{
     width. To center the flexbox container then you must add margins to the left to shift it to the center. How do you know the center?
     Well keep adjusting the margin-left until it is in the center where you want it
     */
-    margin-left: 100px !important; /*95px is abitrary here. You just have to keep adjusting it until it aligns were you want it. Also, it has to be margin-left
+    margin-left: 100px !important; /*100px is abitrary here. You just have to keep adjusting it until it aligns were you want it. Also, it has to be margin-left
     because the element always starts from the left. When you start making your designs responsive you'd have to use media queries to adjust the appearance and 
     position of the element for different screen sizes like iPads and mobile phones. You'd have to do media queries that for every element usually
     The "important" flag here just tells the browser that the style specified must be applied but it isn't needed here.*/
