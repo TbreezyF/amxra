@@ -1,0 +1,191 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    padding: 0px; /* Making sure theres no extra spaces - This would make sure that the header starts and remains fixed at the very to of the screen*/
+    margin: 0px;  /* Making sure theres no extra spaces - This would make sure that the header starts and remains fixed at the very to of the screen*/
+    background-color: black;
+    opacity:0.9;
+    text-align: center;
+    display: block; /*I am not sure why this was "flex" but usually the body should be a block*/
+    justify-content: center;
+}
+
+#content{
+    border: 3px solid red;
+    display: flex;
+    justify-content: center;
+}
+
+/* header */
+
+header{
+    border: 3px solid red;
+    display: flex;
+    align-items:center;
+    margin-bottom: 20px !important;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+.logo img {
+    border: 3px solid red;
+    height: 50px;
+}
+
+
+/*header*/ nav { /*You don't need to add these styles to the header hence I am commenting it out*/
+    border: 3px solid red;
+    padding-right: 0px;  /*changed this to 0px. Not sure if adding a padding-right was a requirement but it just takes the nav
+    away from the screen*/
+    margin-right: 15px; /*aligning the nav with the #mission et al*/ 
+}
+
+a{
+   color: seashell; 
+   text-decoration: none; /*remove all text decoration (underlines etc) from the links*/
+}
+
+
+/* Mission */
+
+#mission{
+    border: 3px solid red;
+    display: flex;
+    background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg');
+    width: 1200px;
+    height: 700px;
+    margin: auto; /*Allow some space on the sides as in the picture you sent.*/
+    justify-content: center;
+    align-items: center;
+}
+
+#mission .text{
+    border: 3px solid red;
+    background-color: black;
+    height: 200px;
+    width: 1200px;
+}
+
+/* Menu */
+
+#menu{
+    border: 3px solid yellow;
+    display: block; /*changed this to block as there are no flex items*/
+    /*flex-flow: column wrap;*/
+    
+}
+
+.menu{
+    border: 3px solid blue;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 1000px; /* You don't need to specify the width of the flexbox. It would automatically occupy
+    the length of the available screen and center the items. If you must specify the width, then it would occupy the space from
+    from the left of the screen to wherever you specify i.e 1000px and then center the content within the specified
+    width. To center the flexbox container then you must add margins to the left to shift it to the center. How do you know the center?
+    Well keep adjusting the margin-left until it is in the center where you want it
+    */
+    margin-left: 100px !important; /*95px is abitrary here. You just have to keep adjusting it until it aligns were you want it. Also, it has to be margin-left
+    because the element always starts from the left. When you start making your designs responsive you'd have to use media queries to adjust the appearance and 
+    position of the element for different screen sizes like iPads and mobile phones. You'd have to do media queries that for every element usually
+    The "important" flag here just tells the browser that the style specified must be applied but it isn't needed here.*/
+    padding: 0px !important; /*removing every space between the element and its border*/
+}
+
+.menu img{
+    border: 3px solid green;
+    width: 300px;
+    height: 200px;
+    /*margin-bottom:10px;*/ /*No need to add margin-bottom except you actually need the space*/
+}
+
+.menu span{
+    border: 3px solid red;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Locations */
+
+#location{
+    border: 3px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    margin: auto; /*Allow for some margin on both sides*/
+    height: 550px; /*Increased the height by 50px to match the picture you sent a little more*/
+    background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg');
+    width: 1200px;
+}
+
+#location .loccontainer{
+    border: 3px solid red;
+    display: flex;
+    
+}
+
+.places{
+    border: 3px solid red;
+    width: 300px;
+    margin-top: 15px;
+    margin-right: 40px;
+    background-color: black;
+    opacity: 1;
+}
+
+/*footer*/
+
+.footer{
+    border: 3px solid red;
+    height: 200px;
+}
+
+/*copyright*/
+
+.copyright{
+    border: 3px solid red;
+    text-align: left;
+    padding-left:20px;
+    font-size: 15px !important; /* I felt that the copyright was too big. I also added &copy; to the html so that
+    the copyright symbol will be displayed and added a link to navigate back to the main page as it
+    would normally be. Feel free to remove*/
+}
